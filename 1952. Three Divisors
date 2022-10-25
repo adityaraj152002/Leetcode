@@ -1,0 +1,15 @@
+class Solution {
+    public boolean isThree(int n) {
+        int cnt=1;
+        for(int i=1;i<=n/2;i++)
+        {
+            //System.out.println(n%i);
+            if(n%i==0)
+                cnt++;
+        }
+        System.out.println(cnt);
+        if(cnt==3)
+            return true;
+        return false;
+    }
+}
